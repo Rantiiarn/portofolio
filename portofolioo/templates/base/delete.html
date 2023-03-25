@@ -1,0 +1,14 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main-container">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p>Apakah kamu yakin ingin menghapus ini {{item}}?</p>
+        <input class="btn btn-danger"type="submit" value="Hapus">
+
+    </form>
+</div>
+
+{% endblock content %}
